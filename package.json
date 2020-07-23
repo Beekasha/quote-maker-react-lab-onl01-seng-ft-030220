@@ -16,7 +16,7 @@
     "mocha-multi": "^1.0.1",
     "react-scripts": "^1.1.4",
     "webpack": "^3.6.2",
-    "webpack-dev-server": "^3.1.11"
+    "webpack-dev-server": "^2.9.5"
   },
   "dependencies": {
     "babel-core": "^6.26.3",
@@ -41,7 +41,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "mocha --timeout 5000 -R mocha-multi test/helpers.js test/**/**.js  --reporter-options spec=-,json=.results.json",
+    "test": "mocha -R mocha-multi test/helpers.js test/**/**.js  --reporter-options spec=-,json=.results.json",
     "dev:hot": "webpack-dev-server --hot --inline --progress --colors --watch --display-error-details --display-cached --content-base ./",
     "test:watch": "npm run test -- --watch",
     "eject": "react-scripts eject"
